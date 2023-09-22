@@ -9004,6 +9004,11 @@ html .ui-button.ui-state-disabled:active {
   left: 0;
   top: 14px;
 }
+.css-13cymwt-control {
+  top:-9px;
+  border: none;
+  
+}
 
 @media (min-width: 992px) {
   .graph {
