@@ -2,7 +2,7 @@
   "name": "canjobs",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://apnaorganicstore.in/canjobs/",
+  "proxy": "http://13.126.18.37/canjobs/",
   "dependencies": {
     "@cyntler/react-doc-viewer": "^1.13.0",
     "@react-18-pdf/renderer": "^2.3.4",
