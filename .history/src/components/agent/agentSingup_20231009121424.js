@@ -578,7 +578,7 @@ export default function AgentSignUp({ AgentloginFromSignUp }) {
                       <button
                         className="btn btn-primary btn-small w-25 rounded-5 text-uppercase"
                         type="button"
-                        disabled
+                        N/Ad
                       >
                         <span
                           className="spinner-border spinner-border-sm "
