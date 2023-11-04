@@ -100,10 +100,12 @@ body {
 .dark-version-logo.default-logo {
   display: block;
 }
-.main_data_table{
+
+.main_data_table {
   overflow: visible !important;
 }
-.table-responsive.main_table_div{
+
+.table-responsive.main_table_div {
   min-height: 190px !important;
 }
 
@@ -1739,7 +1741,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 
 .filter-search-form-2 .filter-inputs .form-control {
   border: 0;
-  height: 40px;
+  height: 45px;
   color: #6b6e6f;
 }
 
@@ -9010,10 +9012,11 @@ html .ui-button.ui-state-disabled:active {
   left: 0;
   top: 14px;
 }
+
 .css-13cymwt-control {
-  top:-9px;
+  top: -9px;
   border: none;
-  
+
 }
 
 @media (min-width: 992px) {
