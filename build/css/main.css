@@ -9158,3 +9158,81 @@ html .ui-button.ui-state-disabled:active {
   margin-top: 5px;
   /* Adjust as needed */
 }
+
+.image-container {
+  position: relative;
+}
+
+.annotatable-image {
+  width: 100%;
+  height: auto;
+}
+
+.annotation {
+  position: absolute;
+  /* border: 2px solid red; */
+  background-color: transparent;
+  pointer-events: none;
+  position: "absolute";
+  left: "-5px";
+  top: "-5px";
+  cursor: "pointer";
+}
+
+/*Comment form css*/
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.comment-input-container {
+  position: relative;
+  width: -webkit-fill-available;
+  margin-bottom: 10px;
+}
+
+.comment-input {
+  font-size: 15px;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.email-suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 1;
+}
+
+.email-suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.save-comment-btn {
+  margin-right: 10px;
+}
+
+.cancel-btn {
+  background-color: #17a2b8;
+  /* Use a color that fits your design */
+  color: #fff;
+}

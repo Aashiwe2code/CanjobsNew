@@ -5,6 +5,7 @@
   "proxy": "http://13.126.18.37/canjobs/",
   "dependencies": {
     "@cyntler/react-doc-viewer": "^1.13.0",
+    "@paypal/react-paypal-js": "^8.1.3",
     "@react-18-pdf/renderer": "^2.3.4",
     "@react-oauth/google": "^0.11.0",
     "@react-pdf/renderer": "^3.1.9",
@@ -12,8 +13,13 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "annotator": "^2.0.0-alpha.3",
     "axios": "^1.3.4",
     "bootstrap": "^4.5.2",
+    "ckeditor4-react": "^5.0.0",
+    "fabric": "^5.3.0",
+    "froala-editor": "^4.1.3",
+    "gapi-script": "^1.2.0",
     "jwt-decode": "^3.1.2",
     "moment": "^2.29.4",
     "react": "^18.2.0",
@@ -21,9 +27,11 @@
     "react-dom": "^18.2.0",
     "react-facebook-login": "^4.1.1",
     "react-file-viewer": "^1.2.1",
+    "react-froala-wysiwyg": "^4.1.3",
     "react-icons": "^4.10.1",
     "react-linkedin-login-oauth2": "^2.0.1",
     "react-moment": "^1.1.3",
+    "react-native-render-html": "^6.3.4",
     "react-native-web": "^0.19.4",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^2.1.3",
@@ -37,7 +45,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=4096 start",
+    "start": "react-scripts start",
     "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
