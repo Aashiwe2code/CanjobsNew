@@ -8,7 +8,7 @@ import Pagination from "./pagination";
 import { Link } from "react-router-dom";
 import Loader from "./loader";
 import moment from "moment";
-export default function EmployerNotesTable({ search }) {
+export default function NotesTable({ search }) {
   let [isLoading, setIsLoading] = useState(true);
   let [apiCall, setApiCall] = useState(false);
   const [data, setData] = useState([]);
@@ -19,7 +19,7 @@ export default function EmployerNotesTable({ search }) {
   const [columnName, setcolumnName] = useState("id");
   const [sortOrder, setSortOrder] = useState("DESC");
   /*Function to get Employee's notes */
-  const EmployerNotes = async () => {
+  const Notes = async () => {
     try {
       let res = await getSingleCompanyFollowup(
         "",
@@ -40,7 +40,7 @@ export default function EmployerNotesTable({ search }) {
     }
   };
   useEffect(() => {
-    EmployerNotes();
+    Notes();
     if (apiCall === true) {
       setApiCall(false);
     }
