@@ -32,6 +32,7 @@
     "react-file-viewer": "^1.2.1",
     "react-froala-wysiwyg": "^4.1.3",
     "react-icons": "^4.10.1",
+    "react-lazy-load": "^4.0.1",
     "react-linkedin-login-oauth2": "^2.0.1",
     "react-moment": "^1.1.3",
     "react-native-render-html": "^6.3.4",
