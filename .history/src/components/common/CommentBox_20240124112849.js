@@ -17,7 +17,7 @@ export default function CommentBox({
   OnHandleUpdateComment,
   determineBackgroundColor,
   setReplyCommentClick,
-  getCommentsReplyList()
+  getCommentsReplyList,
   replyCommentClick,
   replyComment,
   handleInputChange,
@@ -202,8 +202,10 @@ export default function CommentBox({
                 ) : (
                   <Link
                     className="mx-5 mr-0 ml-auto"
-                    onClick={() => {setReplyCommentClick(commentItem.id)
-                      getCommentsReplyList();}}
+                    onClick={() => {
+                      setReplyCommentClick(commentItem.id);
+                      getCommentsReplyList();
+                    }}
                   >
                     Reply <FaReplyAll />
                   </Link>
