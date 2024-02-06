@@ -241,8 +241,8 @@ function EmployementDetails(props) {
           <form onSubmit={onCarrerProfileClick}>
             <h5 className="text-center pt-2 mb-7">Add Employment</h5>
             {(employementData || []).map((CareerDetails) => (
-              <div class="row mb-5 bg-light py-5 pr-10 pl-4 rounded">
-                <div class="col-12 text-capitalize p-0">
+              <div className="row mb-5 bg-light py-5 pr-10 pl-4 rounded">
+                <div className="col-12 text-capitalize p-0">
                   <div
                     className="w-100 card px-6 py-3 shadow-8 border-0 mb-2" //"w-100 border mb-3 rounded-5 text-capitalize"
                     key={CareerDetails.career_id}
@@ -257,7 +257,7 @@ function EmployementDetails(props) {
                                 ` - ${CareerDetails.functional_area}`}
                             </span>
                           </span>
-                          <span class="font-size-3 text-default-color text-break">
+                          <span className="font-size-3 text-default-color text-break">
                             {CareerDetails.company}
                             {CareerDetails.industry
                               ? `(${CareerDetails.industry})`
@@ -267,7 +267,7 @@ function EmployementDetails(props) {
                       </div>
                       <div className="d-flex ">
                         <div className="d-flex align-items-center justify-content-right flex-wrap text-right">
-                          <span class="font-size-4 text-gray w-100">
+                          <span className="font-size-4 text-gray w-100">
                             {" "}
                             {moment(CareerDetails.start_date).format(
                               "DD MMMM, YYYY"
@@ -280,9 +280,9 @@ function EmployementDetails(props) {
                                   "DD MMMM, YYYY"
                                 )}
                           </span>
-                          <span class="d-none font-size-3 text-gray w-100">
+                          <span className="d-none font-size-3 text-gray w-100">
                             <span
-                              class=""
+                              className=""
                               className={`${
                                 CareerDetails.company_location === null
                                   ? "d-none"
