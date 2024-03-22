@@ -1077,7 +1077,7 @@ function AddJobModal(props) {
                     htmlFor="fetured"
                     className="font-size-4 text-black-2 font-weight-semibold line-height-reset"
                   >
-                    Featured:{" "}
+                    Featured:
                     <input
                       type="checkbox"
                       id="fetured"

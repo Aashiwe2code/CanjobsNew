@@ -250,7 +250,7 @@ export default function PayForm({ setApicall, data }) {
           />
         ) : (
           <>
-            {" "}
+            
             <PayPalButton
               amount={Number(state.amount)}
               getAmt={getAmt}

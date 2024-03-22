@@ -61,7 +61,7 @@ export default function PayentForm({ data, user_id }) {
                   <div className="single_note mb-5" key={index}>
                     <div className="d-flex justify-content-between">
                       <p className="text-italic font-size-3 m-0">
-                        Payment on:{" "}
+                        Payment on:
                         {moment(res.created_at).format("Do MM YYYY, h:mm:ss a")}
                       </p>
                     </div>

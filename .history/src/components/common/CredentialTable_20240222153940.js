@@ -114,9 +114,9 @@ export default function CredentialTable({ data, editCredential }) {
                     title="Contact"
                   >
                     <span className="text-gray px-1">
-                      <FaRegEdit />{" "}
+                      <FaRegEdit />
                     </span>
-                    {/* <span className="fa fa-address-book text-gray px-1"></span> */}{" "}
+                    {/* <span className="fa fa-address-book text-gray px-1"></span> */}
                   </button>
                 </td>
               </tr>

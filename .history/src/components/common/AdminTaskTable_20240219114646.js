@@ -220,7 +220,7 @@ export default function AdminTaskTable(props) {
                         ) : (
                           <p className="m-0">
                             <p className="text-gray font-size-2 m-0">
-                              {data.subject_description.replace(/@/g, "")}{" "}
+                              {data.subject_description.replace(/@/g, "")}
                             </p>
                           </p>
                         )}

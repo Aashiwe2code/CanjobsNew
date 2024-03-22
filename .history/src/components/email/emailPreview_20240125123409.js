@@ -92,7 +92,7 @@ const PreviewEmail = ({ id, emailType, singleEmailData }) => {
                 <b>From:</b> {singleEmailData.Sender.EmailAddress.Address}
               </p>
               <p>
-                <b>To:</b>{" "}
+                <b>To:</b>
                 {singleEmailData.ToRecipients[0].EmailAddress.Address}
               </p>
               <h2>{decodeEmailSubject(singleEmailData.Subject)}</h2>

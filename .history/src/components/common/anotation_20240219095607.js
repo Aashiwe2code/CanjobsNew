@@ -149,7 +149,7 @@
 //           <ul>
 //             {getCommentsList().map((commentItem, index) => (
 //               <li key={index} className="text-break">
-//                 <strong>{commentItem.coordinates}:</strong>{" "}
+//                 <strong>{commentItem.coordinates}:</strong>
 //                 {commentItem.comment}
 //               </li>
 //             ))}
@@ -375,7 +375,7 @@
 //           <ul>
 //             {/* {(comments || []).map((commentItem, index) => (
 //               <li key={index} className="text-break">
-//                 <strong>{commentItem.coordinates}:</strong>{" "}
+//                 <strong>{commentItem.coordinates}:</strong>
 //                 {commentItem.comment}
 //               </li>
 //             ))} */}

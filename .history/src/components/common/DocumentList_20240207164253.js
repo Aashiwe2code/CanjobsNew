@@ -185,7 +185,7 @@ export default function DocumentList({
                                   ) : (
                                     <>
                                       <span>
-                                        {" "}
+                                        
                                         {textReplaceFunction(item.type)}
                                       </span>
                                       <p className="font-size-2 m-0">

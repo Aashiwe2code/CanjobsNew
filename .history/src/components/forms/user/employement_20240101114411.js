@@ -270,7 +270,7 @@ function EmployementDetails(props) {
                           <span className="font-size-4 text-gray w-100">
                             {moment(CareerDetails.start_date).format(
                               "DD MMMM, YYYY"
-                            )}{" "}
+                            )}
                             -
                             {CareerDetails.currently_work_here === ("1" || 1)
                               ? "Currently working"

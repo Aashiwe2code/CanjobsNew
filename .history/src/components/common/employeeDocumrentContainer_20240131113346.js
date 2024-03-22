@@ -1183,7 +1183,7 @@ export default function DocumrentContainer(props) {
                                       }
                                       className="email-suggestion-item"
                                     >
-                                      <strong>{email.name}</strong>{" "}
+                                      <strong>{email.name}</strong>
                                       {email.email}
                                     </li>
                                   ))}

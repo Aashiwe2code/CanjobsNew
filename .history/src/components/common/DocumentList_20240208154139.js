@@ -76,7 +76,7 @@ export default function DocumentList({
                   style={{ alignContent: "start" }}
                 >
                   <span className="text-start text-left font-size-5 text-capitalize">
-                    {" "}
+                    
                     {textReplaceFunction(typeitem.type)}
                   </span>
                 </Accordion.Header>

@@ -1097,7 +1097,7 @@ export default function DocumrentContainer(props) {
                     <td className="p-3">
                       {editName === true && docId === item.id ? (
                         <div className="reply_box position-relative">
-                          {" "}
+                          
                           <input
                             type="text"
                             value={editDocName}

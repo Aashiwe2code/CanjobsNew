@@ -191,7 +191,7 @@ function JobDetailpageAdmim(props) {
                                 src="image/icons/marker.svg"
                                 alt="Location"
                               />
-                              {jobData.your_duties} , {jobData.industry_type}{" "}
+                              {jobData.your_duties} , {jobData.industry_type}
                               {jobData.location}
                             </span>
                           ) : (
@@ -349,7 +349,7 @@ function JobDetailpageAdmim(props) {
                             </div>
                             <div className="text_box text-left w-100 text-capitalize">
                               <h3 className="mb-0 font-size-6 heading-dark-color d-flex align-items-center text-break">
-                                {jobData.job_title}{" "}
+                                {jobData.job_title}
                                 {jobData.employement
                                   ? `(${jobData.employement})`
                                   : ""}
@@ -378,7 +378,7 @@ function JobDetailpageAdmim(props) {
                                             dangerouslySetInnerHTML={{
                                               __html: jobData.your_duties,
                                             }}
-                                          />{" "}
+                                          />
                                           {jobData.industry_type &&
                                             `,${jobData.industry_type}`}
                                           {jobData.location}

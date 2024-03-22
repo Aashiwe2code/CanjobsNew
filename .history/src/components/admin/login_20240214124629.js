@@ -146,7 +146,7 @@ export default function AdminLoginFrom({ setAdminLoggedIn }) {
               </Link>
               {/* user login form */}
               <h5 className="text-center mb-7 font-size-4">
-                {" "}
+                
                 {showForgotPassword === true ? "Fogot Password" : "Admin Login"}
               </h5>
               <form onSubmit={onUserLoginClick}>

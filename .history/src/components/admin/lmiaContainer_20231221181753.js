@@ -138,7 +138,7 @@ function LimaContainer(props) {
                       marginTop: userType === "company" ? "110px" : null,
                     }}
                   >
-                    LMIA of Jobs{" "}
+                    LMIA of Jobs
                   </h3>
                 </div>
                 {/*<-- Job Search and Filter -->*/}

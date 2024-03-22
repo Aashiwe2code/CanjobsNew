@@ -391,7 +391,7 @@ function PersonalDetails(props) {
               <form onSubmit={onUserPersonalDetailClick}>
                 {props.employeeId === "0" ? (
                   <h5 className="text-center pt-2 mb-7">
-                    {" "}
+                    
                     Add Candidate Details
                   </h5>
                 ) : (
@@ -1083,7 +1083,7 @@ function PersonalDetails(props) {
                         htmlFor="fetured"
                         className="font-size-4 text-black-2 font-weight-semibold line-height-reset"
                       >
-                        Featured:{" "}
+                        Featured:
                         <input
                           type="checkbox"
                           id="fetured"

@@ -191,7 +191,7 @@ function JobDetailpageAdmim(props) {
                                 src="image/icons/marker.svg"
                                 alt="Location"
                               />
-                              {jobData.your_duties} , {jobData.industry_type}{" "}
+                              {jobData.your_duties} , {jobData.industry_type}
                               {jobData.location}
                             </span>
                           ) : (
@@ -375,7 +375,7 @@ function JobDetailpageAdmim(props) {
                                             dangerouslySetInnerHTML={{
                                               __html: jobData.your_duties,
                                             }}
-                                          />{" "}
+                                          />
                                           {jobData.industry_type &&
                                             `,${jobData.industry_type}`}
                                           {jobData.location}

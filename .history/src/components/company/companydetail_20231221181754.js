@@ -116,7 +116,7 @@ function CompanyDetailPage(props) {
                 <i className="fas fa-map-marker-alt mr-2"></i>
                 {employerData.address}
               </div>
-            ) : null}{" "}
+            ) : null}
             {props.page === "company_profile" ? null : (
               <h4 className="text-black-2 mb-5 font-size-5 d-flex align-items-center justify-content-space-between">
                 <span>Contact Info</span>

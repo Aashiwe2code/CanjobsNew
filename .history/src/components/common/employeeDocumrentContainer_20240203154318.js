@@ -1083,13 +1083,13 @@ export default function DocumrentContainer(props) {
                     <td className="p-3">
                       {editName === true && docName === item.type ? (
                         <div className="reply_box position-relative">
-                          {" "}
+                          
                           <input
                             type="text"
                             value={docName}
                             className="font-size-2 m-3 bg-primary border-0 border-none"
                             onChange={(e) => docFileBase(e.target.value)}
-                          />{" "}
+                          />
                           <button
                             type="button"
                             onClick={() => {

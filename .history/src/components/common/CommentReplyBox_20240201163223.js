@@ -24,7 +24,7 @@ export default function CommentReplyBox({
                 <div className="p-3 bg-white rounded mb-1">
                   {replyItem.msg && (
                     <div>
-                      {" "}
+                      
                       <div className="d-flex justify-content-between align-items-center text-dark">
                         <h6 className="font-size-4 text-break m-0 text-capitalize">
                           {replyItem.receiver_name}

@@ -119,7 +119,7 @@ export default function ActivityTable(props) {
                       {data.employee_name === ("" || undefined || null)
                         ? "Candidate"
                         : data.employee_name}
-                    </Link>{" "}
+                    </Link>
                     {" by "}
                     {data.user_type + " " + data.created_by}
                   </td>

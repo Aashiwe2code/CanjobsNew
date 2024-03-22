@@ -161,7 +161,7 @@ export default function AddTransactionForm({
             name="payment_mode"
           />
           Cash
-        </div>{" "}
+        </div>
       </div>
 
       <div className="m-3">

@@ -251,7 +251,7 @@ export default function AgentConversation({
         />
       </div>
       <div className="chat-container col-md-6">
-        {" "}
+        
         <MessageList data={allData} />
       </div>
     </div>

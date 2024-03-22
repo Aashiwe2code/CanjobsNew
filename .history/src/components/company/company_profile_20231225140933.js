@@ -512,7 +512,7 @@ function CompanyProfileDetail(props) {
                                           {employerData.company_size}
                                         </div>
                                       ) : null}
-                                      s{" "}
+                                      s
                                       {employerData.company_start_date ? (
                                         <div
                                           className="font-size-3 mb-1 mr-10"

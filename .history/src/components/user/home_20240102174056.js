@@ -29,7 +29,7 @@ function EmployeeHomePage() {
             <div className="col-lg-12 col-12 translateY-25 pt-lg-12 pb-lg-33 pb-md-28 pb-xs-26 pb-29 pt-md-20">
               <SearchForm />
             </div>
-            {/* <!-- End Hero Form --> */}{" "}
+            {/* <!-- End Hero Form --> */}
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ function EmployeeHomePage() {
           <div className="row justify-content-center mb-lg-16 mb-11">
             <div className="col-xxl-5 col-xl-6 col-lg-7 col-md-10 text-center">
               <h2 className="mb-6 mb-lg-7 text-black-2 font-size-10">
-                {token ? "Recommended Jobs" : "Featured Jobs"}{" "}
+                {token ? "Recommended Jobs" : "Featured Jobs"}
               </h2>
               <p className="px-xs-3 px-md-12 px-lg-8 px-xl-8 px-xxl-6 font-size-5 mb-0">
                 Leverage agile frameworks to provide a robust synopsis for high
@@ -58,7 +58,7 @@ function EmployeeHomePage() {
             <div className="table-responsive main_table_div">
               <Loader />
             </div>
-          )}{" "}
+          )}
         </div>
       </section>
       {/* <!-- featuredJobOne Area --> */}
@@ -87,7 +87,7 @@ function EmployeeHomePage() {
                                 <a className="btn btn-outline-green text-uppercase" href="http://localhost:3000/">Explore All</a>
                             </div>
                         </div> */}
-            {/* <!-- Section Button End --> */}{" "}
+            {/* <!-- Section Button End --> */}
           </div>
           {/* <!-- End Section Top --> */}
           <div className="row justify-content-center">
@@ -410,7 +410,7 @@ function EmployeeHomePage() {
                 </div>
               </a>
             </div> */}
-            {/* <!-- End Single Category --> */}{" "}
+            {/* <!-- End Single Category --> */}
           </div>
         </div>
       </div>
@@ -433,7 +433,7 @@ function EmployeeHomePage() {
                   plug-and-play networks. Dynamically procrastinate
                 </p>
               </div>
-              {/* <!-- section-title end --> */}{" "}
+              {/* <!-- section-title end --> */}
             </div>
           </div>
           <div className="row justify-content-center d-none">
@@ -451,7 +451,7 @@ function EmployeeHomePage() {
                   src="image/l2/png/blog-img1.png"
                   className="card-img-top"
                   alt="..."
-                />{" "}
+                />
                 {/* <!-- card img end --> */}
                 {/* <!-- card-body start --> */}
                 <div className="card-body pt-11 px-0 pb-0">
@@ -504,13 +504,13 @@ function EmployeeHomePage() {
                         </a>
                       </p>
                     </div>
-                    {/* <!-- media body start --> */}{" "}
+                    {/* <!-- media body start --> */}
                   </div>
-                  {/* <!-- media end --> */}{" "}
+                  {/* <!-- media end --> */}
                 </div>
-                {/* <!-- card-body end --> */}{" "}
+                {/* <!-- card-body end --> */}
               </div>
-              {/* <!-- card end --> */}{" "}
+              {/* <!-- card end --> */}
             </div>
             {/* <!-- single blog end --> */}
             {/* <!-- single blog start --> */}
@@ -582,13 +582,13 @@ function EmployeeHomePage() {
                         </a>
                       </p>
                     </div>
-                    {/* <!-- media body start --> */}{" "}
+                    {/* <!-- media body start --> */}
                   </div>
-                  {/* <!-- media end --> */}{" "}
+                  {/* <!-- media end --> */}
                 </div>
-                {/* <!-- card-body end --> */}{" "}
+                {/* <!-- card-body end --> */}
               </div>
-              {/* <!-- card end --> */}{" "}
+              {/* <!-- card end --> */}
             </div>
             {/* <!-- single blog end --> */}
             {/* <!-- single blog start --> */}
@@ -637,7 +637,7 @@ function EmployeeHomePage() {
                       src="image/l2/png/blog-user-img3.png"
                       className="align-self-center circle-54 mr-3"
                       alt=""
-                    />{" "}
+                    />
                     {/* <!-- media img start --> */}
                     {/* <!-- media body start --> */}
                     <div className="media-body pl-4 pt-2">
@@ -658,15 +658,15 @@ function EmployeeHomePage() {
                         </a>
                       </p>
                     </div>
-                    {/* <!-- media body start --> */}{" "}
+                    {/* <!-- media body start --> */}
                   </div>
-                  {/* <!-- media end --> */}{" "}
+                  {/* <!-- media end --> */}
                 </div>
-                {/* <!-- card-body end --> */}{" "}
+                {/* <!-- card-body end --> */}
               </div>
-              {/* <!-- card end --> */}{" "}
+              {/* <!-- card end --> */}
             </div>
-            {/* <!-- single blog end --> */}{" "}
+            {/* <!-- single blog end --> */}
           </div>
         </div>
       </div>
