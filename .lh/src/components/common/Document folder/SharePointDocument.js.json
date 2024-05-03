@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 44,
+            "activePatchIndex": 45,
             "patches": [
                 {
                     "date": 1714131083531,
@@ -184,6 +184,10 @@
                 {
                     "date": 1714646823152,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,22 +57,22 @@\n     return tempElement.textContent || tempElement.innerText || '';\r\n   }\r\n   console.log(adminList)\r\n   // Generate a list of comments from the state for image annotation\r\n-  const getCommentsList = async (did) => {\r\n-    if (did) {\r\n+  const getCommentsList = async (data) => {\r\n+    if (data) {\r\n       try {\r\n         let res = await GetCommentsAndAssign(\r\n-          did, //docId,\r\n+          data.id, //docId,\r\n           \"\", // adminid,\r\n           \"\", // annotationStatus,\r\n           \"document\"\r\n         );\r\n         if (res.data.status === (1 || \"1\")) {\r\n           // setCommentsList(res.data.data.data.map(obj =>\r\n           //   JSON.parse(obj.doctaskjson)\r\n           // ));\r\n-          if (docSingleDate.file.mimeType === \"application/pdf\"\r\n+          if (data.file.mimeType === \"application/pdf\"\r\n             // docTypePage === \"adobe\"\r\n           ) {\r\n             setCommentsList(res.data.data.data)\r\n           } else {\r\n"
+                },
+                {
+                    "date": 1714653348699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,9 +231,11 @@\n     }\r\n   };\r\n   useEffect(() => {\r\n     AllShareType();\r\n-    AdminData()\r\n+    if(localStorage.getItem(\"userType\"===\"admin\")){\r\n+      AdminData()\r\n+    }\r\n \r\n     // if (notification === \"yes\") {\r\n     //     setDocPreview(true)\r\n     // }\r\n"
                 }
             ],
             "date": 1714131083531,
