@@ -8935,7 +8935,7 @@ a.hover-text-hitgray:hover {
 @media (min-width: 768px) {
   .dashboard-main-container {
     padding-left: 120px;
-    height: calc(100vh - 36px) !important;
+    height: 100vh !important;
     overflow: auto;
   }
 }
@@ -9238,6 +9238,7 @@ html .ui-button.ui-state-disabled:active {
   /* Use a color that fits your design */
   color: #fff;
 }
+
 /* Mail file attechment css */
 .mail-file-attachments {
   display: flex;
@@ -9247,7 +9248,8 @@ html .ui-button.ui-state-disabled:active {
 .mail-file-attachment {
   display: flex;
   align-items: center;
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: #f0f0f0;
+  /* Light gray background */
   border-radius: 5px;
   padding: 5px 10px;
   margin-right: 10px;
@@ -9260,14 +9262,17 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .mail-remove-file {
-  background-color: #dc3545; /* Red background for remove button */
+  background-color: #dc3545;
+  /* Red background for remove button */
   color: white;
   border: none;
-  border-radius: 50%; /* Rounded shape */
+  border-radius: 50%;
+  /* Rounded shape */
   padding: 5px;
   cursor: pointer;
 }
 
 .mail-remove-file:hover {
-  background-color: #c82333; /* Darker red on hover */
+  background-color: #c82333;
+  /* Darker red on hover */
 }
