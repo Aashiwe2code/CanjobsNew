@@ -1720,7 +1720,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   border-bottom: 0;
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .filter-search-form-2 .filter-inputs .form-group {
     width: 50%;
     border-right: 1px solid #e5e5e5;
@@ -1789,7 +1790,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .filter-search-form-2 .button-block {
     margin-top: 0;
   }
@@ -2089,7 +2091,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   z-index: 800;
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .dashboard-sidebar-wrapper {
     transform: none;
   }
@@ -2194,7 +2197,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 }
 
 .sidebar-mobile-button {
-  min-height: 30px;
+  /* min-height: 30px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -2209,17 +2212,43 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center; */
+  position: fixed;
+  bottom: 0;
+  height: fit-content;
+  top: 0;
+  transition-y: -50%;
+  transform: translate(60%, -50%);
+  /* left: 0; */
+  right: 0;
+  /* width: 100%; */
+  top: 10.9%;
+  padding: 16px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: -3;
+  background: #fff;
+  color: #000 !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  z-index: 999;
   justify-content: center;
+  border:solid 1px #000
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .sidebar-mobile-button {
     transform: translateY(100%);
   }
 }
 
 .sidebar-mobile-button:after {
-  content: "Menu";
+  /* content: "Menu"; */
   margin-left: 10px;
 }
 
@@ -6970,7 +6999,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .row-md {
     display: flex;
     flex-wrap: wrap;
@@ -7469,7 +7499,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .w-md-25 {
     width: 25% !important;
   }
@@ -8410,7 +8441,8 @@ a.hover-text-hitgray:hover {
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .position-md-absolute {
     position: absolute !important;
   }
@@ -8426,7 +8458,8 @@ a.hover-text-hitgray:hover {
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .pos-abs-md {
     position: absolute;
   }
@@ -8932,7 +8965,8 @@ a.hover-text-hitgray:hover {
 }
 
 /*/------ Dashboard Adjustment Styles ------/*/
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .dashboard-main-container {
     padding-left: 120px;
     height: 100vh !important;
