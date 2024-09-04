@@ -2078,29 +2078,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 /* ---------------------------
   01.Component -> { Sidebar } 
 ------------------------------*/
-.dashboard-sidebar-wrapper {
-  width: 120;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  /* background: var(--bg); */
-  background: #992b32;
-  transform: translateX(-100%);
-  transition: .4s transform;
-  z-index: 800;
-}
 
-/*To set sidebar menu to show and hide on all screens*/
-@media (display-mode:fullscreen) {
-  .dashboard-sidebar-wrapper {
-    transform: none;
-  }
-}
-
-.dashboard-sidebar-wrapper.show {
-  transform: translateX(0%);
-}
 
 .dashboard-layout-sidebar li a {
   color: #fff;
@@ -2197,59 +2175,37 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 }
 
 .sidebar-mobile-button {
-  /* min-height: 30px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  z-index: 801;
-  background: #00b074;
-  color: #fff !important;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
   position: fixed;
   bottom: 0;
   height: fit-content;
-  top: 0;
-  transition-y: -50%;
-  transform: translate(60%, -50%);
-  /* left: 0; */
+  transition: all .1s;
+  transform: translate(98%, 0);
   right: 0;
-  /* width: 100%; */
-  top: 10.9%;
-  padding: 16px 8px;
-  font-size: 16px;
+  top: 60px;
+  font-size: 24px;
   font-weight: 600;
-  z-index: -3;
-  background: #fff;
-  color: #000 !important;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
+  background: #992b32;
+  color: #fff !important;
   display: flex;
+  line-height: 1;
+  padding: 7px;
   border-radius: 50%;
   align-items: center;
   z-index: 999;
   justify-content: center;
-  border:solid 1px #000
+  border: solid 1px #fff;
 }
 
 /*To set sidebar menu to show and hide on all screens*/
 @media (display-mode:fullscreen) {
   .sidebar-mobile-button {
-    transform: translateY(100%);
+    top: 100px;
   }
 }
 
 .sidebar-mobile-button:after {
   /* content: "Menu"; */
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .sidebar-mobile-button[aria-expanded="true"]:after {
