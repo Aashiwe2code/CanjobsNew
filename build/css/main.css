@@ -8932,10 +8932,10 @@ a.hover-text-hitgray:hover {
 
 @media (min-width: 1600px) {
   .dashboard-main-container {
-    max-width: calc(100% - 120px);
+    /* max-width: calc(100% - 120px); */
     margin-left: auto;
-    padding-left: 75px;
-    padding-right: 75px;
+    /* padding-left: 75px;
+    padding-right: 75px; */
   }
 }
 
