@@ -2211,6 +2211,43 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 .sidebar-mobile-button[aria-expanded="true"]:after {
   content: "Sidebar Close";
 }
+.annotation-mobile-button {
+  position: fixed;
+  bottom: 0;
+  height: fit-content;
+  transition: all .1s;
+  transform: translate(98%, 0);
+  right: 37px;
+  top: calc(100vh - 50%);
+  font-size: 24px;
+  font-weight: 600;
+  background:   #FA474A;
+  color: #fff !important;
+  display: flex;
+  line-height: 1;
+  padding: 20px 3px;
+  border-radius: 10%;
+  align-items: center;
+  z-index: 999;
+  justify-content: center;
+  border: solid 1px #fff;
+}
+
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
+  .annotation-mobile-button {
+    top: 100px;
+  }
+}
+
+.annotation-mobile-button:after {
+  /* content: "Menu"; */
+  margin-left: 0;
+}
+
+.annotation-mobile-button[aria-expanded="true"]:after {
+  content: "Sidebar Close";
+}
 
 /* ---------------------------
   02.Utility -> { Color } 
@@ -9111,7 +9148,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .text-truncate {
-  width: 100px;
+  /* width: 100px; */
+  max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
