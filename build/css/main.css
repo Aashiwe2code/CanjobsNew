@@ -2211,17 +2211,18 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 .sidebar-mobile-button[aria-expanded="true"]:after {
   content: "Sidebar Close";
 }
+
 .annotation-mobile-button {
   position: fixed;
   bottom: 0;
   height: fit-content;
   transition: all .1s;
   transform: translate(98%, 0);
-  right: 37px;
-  top: calc(100vh - 50%);
+  right: 32px;
+  top: calc(100vh - 70%);
   font-size: 24px;
   font-weight: 600;
-  background:   #FA474A;
+  background: #FA474A;
   color: #fff !important;
   display: flex;
   line-height: 1;
