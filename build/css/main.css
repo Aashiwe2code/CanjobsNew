@@ -101,6 +101,14 @@ body {
   display: block;
 }
 
+.main_data_table {
+  overflow: visible !important;
+}
+
+.table-responsive.main_table_div {
+  min-height: 190px !important;
+}
+
 body[data-theme='dark'] .dark-version-logo,
 body[data-theme='dark'] .dark-shape,
 .dark-mode-texts .dark-version-logo,
@@ -1712,7 +1720,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   border-bottom: 0;
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .filter-search-form-2 .filter-inputs .form-group {
     width: 50%;
     border-right: 1px solid #e5e5e5;
@@ -1733,7 +1742,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 
 .filter-search-form-2 .filter-inputs .form-control {
   border: 0;
-  height: 40px;
+  height: 45px;
   color: #6b6e6f;
 }
 
@@ -1781,7 +1790,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .filter-search-form-2 .button-block {
     margin-top: 0;
   }
@@ -2068,28 +2078,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 /* ---------------------------
   01.Component -> { Sidebar } 
 ------------------------------*/
-.dashboard-sidebar-wrapper {
-  width: 120;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  /* background: var(--bg); */
-  background: #992b32;
-  transform: translateX(-100%);
-  transition: .4s transform;
-  z-index: 800;
-}
 
-@media (min-width: 768px) {
-  .dashboard-sidebar-wrapper {
-    transform: none;
-  }
-}
-
-.dashboard-sidebar-wrapper.show {
-  transform: translateX(0%);
-}
 
 .dashboard-layout-sidebar li a {
   color: #fff;
@@ -2186,36 +2175,78 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
 }
 
 .sidebar-mobile-button {
-  min-height: 30px;
   position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  font-size: 16px;
+  height: fit-content;
+  transition: all .1s;
+  transform: translate(98%, 0);
+  right: 11px;
+  top: calc(100vh - 50%);
+  font-size: 24px;
   font-weight: 600;
-  z-index: 801;
-  background: #00b074;
+  background: #992b32;
   color: #fff !important;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
   display: flex;
+  line-height: 1;
+  padding: 20px 3px;
+  border-radius: 10%;
   align-items: center;
+  z-index: 999;
   justify-content: center;
+  border: solid 1px #fff;
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .sidebar-mobile-button {
-    transform: translateY(100%);
+    top: 100px;
   }
 }
 
 .sidebar-mobile-button:after {
-  content: "Menu";
-  margin-left: 10px;
+  /* content: "Menu"; */
+  margin-left: 0;
 }
 
 .sidebar-mobile-button[aria-expanded="true"]:after {
+  content: "Sidebar Close";
+}
+
+.annotation-mobile-button {
+  position: fixed;
+  bottom: 0;
+  height: fit-content;
+  transition: all .1s;
+  transform: translate(98%, 0);
+  right: 32px;
+  top: calc(100vh - 70%);
+  font-size: 24px;
+  font-weight: 600;
+  background: #FA474A;
+  color: #fff !important;
+  display: flex;
+  line-height: 1;
+  padding: 20px 3px;
+  border-radius: 10%;
+  align-items: center;
+  z-index: 999;
+  justify-content: center;
+  border: solid 1px #fff;
+}
+
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
+  .annotation-mobile-button {
+    top: 100px;
+  }
+}
+
+.annotation-mobile-button:after {
+  /* content: "Menu"; */
+  margin-left: 0;
+}
+
+.annotation-mobile-button[aria-expanded="true"]:after {
   content: "Sidebar Close";
 }
 
@@ -6962,7 +6993,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .row-md {
     display: flex;
     flex-wrap: wrap;
@@ -7461,7 +7493,8 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .w-md-25 {
     width: 25% !important;
   }
@@ -8402,7 +8435,8 @@ a.hover-text-hitgray:hover {
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .position-md-absolute {
     position: absolute !important;
   }
@@ -8418,7 +8452,8 @@ a.hover-text-hitgray:hover {
   }
 }
 
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .pos-abs-md {
     position: absolute;
   }
@@ -8924,20 +8959,21 @@ a.hover-text-hitgray:hover {
 }
 
 /*/------ Dashboard Adjustment Styles ------/*/
-@media (min-width: 768px) {
+/*To set sidebar menu to show and hide on all screens*/
+@media (display-mode:fullscreen) {
   .dashboard-main-container {
     padding-left: 120px;
-    height: calc(100vh - 45px) !important;
+    height: 100vh !important;
     overflow: auto;
   }
 }
 
 @media (min-width: 1600px) {
   .dashboard-main-container {
-    max-width: calc(100% - 120px);
+    /* max-width: calc(100% - 120px); */
     margin-left: auto;
-    padding-left: 75px;
-    padding-right: 75px;
+    /* padding-left: 75px;
+    padding-right: 75px; */
   }
 }
 
@@ -9004,10 +9040,11 @@ html .ui-button.ui-state-disabled:active {
   left: 0;
   top: 14px;
 }
+
 .css-13cymwt-control {
-  top:-9px;
+  top: -9px;
   border: none;
-  
+
 }
 
 @media (min-width: 992px) {
@@ -9112,7 +9149,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .text-truncate {
-  width: 100px;
+  /* width: 100px; */
+  max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -9148,4 +9186,122 @@ html .ui-button.ui-state-disabled:active {
 .sub-stage input[type="checkbox"] {
   margin-top: 5px;
   /* Adjust as needed */
+}
+
+.image-container {
+  position: relative;
+}
+
+.annotatable-image {
+  width: 100%;
+  height: auto;
+}
+
+.annotation {
+  position: absolute;
+  /* border: 2px solid red; */
+  background-color: transparent;
+  pointer-events: none;
+  position: "absolute";
+  left: "-5px";
+  top: "-5px";
+  cursor: "pointer";
+}
+
+/*Comment form css*/
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.comment-input-container {
+  position: relative;
+  width: -webkit-fill-available;
+  margin-bottom: 10px;
+}
+
+.comment-input {
+  font-size: 15px;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.email-suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: scroll;
+  height: auto;
+}
+
+.email-suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.save-comment-btn {
+  margin-right: 10px;
+}
+
+.cancel-btn {
+  background-color: #17a2b8;
+  /* Use a color that fits your design */
+  color: #fff;
+}
+
+/* Mail file attechment css */
+.mail-file-attachments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mail-file-attachment {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  /* Light gray background */
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.mail-file-attachment p {
+  margin: 0;
+  padding-right: 10px;
+}
+
+.mail-remove-file {
+  background-color: #dc3545;
+  /* Red background for remove button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  /* Rounded shape */
+  padding: 5px;
+  cursor: pointer;
+}
+
+.mail-remove-file:hover {
+  background-color: #c82333;
+  /* Darker red on hover */
 }
