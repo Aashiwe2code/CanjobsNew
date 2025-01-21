@@ -2188,7 +2188,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   color: #fff !important;
   display: flex;
   line-height: 1;
-  padding: 20px 3px;
+  padding: 18px 1px;
   border-radius: 10%;
   align-items: center;
   z-index: 999;
@@ -2216,6 +2216,7 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   position: fixed;
   bottom: 0;
   height: fit-content;
+  height: -moz-fit-content;
   transition: all .1s;
   transform: translate(98%, 0);
   right: 32px;
