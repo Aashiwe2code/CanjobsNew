@@ -2086,15 +2086,16 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   transition: .4s;
   line-height: 1;
   display: flex;
-  flex-direction: column;
-  max-width: 120px;
-  font-size: 12px;
-  text-align: center;
+  flex-direction: row;
+  max-width: 100%;
+  font-size: 14px;
+  /* text-align: center; */
   gap: 3px;
 }
 
 .dashboard-layout-sidebar li a svg {
-  font-size: 24px;
+  font-size: 16px;
+  min-width: 16px;
 }
 
 [data-theme='dark'] .dashboard-layout-sidebar li a,
