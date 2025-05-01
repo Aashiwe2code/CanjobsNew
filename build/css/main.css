@@ -1342,9 +1342,9 @@ body[data-theme='light'] .dark-mode-texts .light-shape.default-shape,
   font-size: 13px;
   font-weight: 700;
   height: 40px;
-  min-width: 130px;
+  min-width: 100px;
   line-height: 28px;
-  padding: 5px;
+  padding: 5px 15px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
