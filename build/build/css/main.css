@@ -8964,7 +8964,7 @@ a.hover-text-hitgray:hover {
 /*To set sidebar menu to show and hide on all screens*/
 @media (display-mode:fullscreen) {
   .dashboard-main-container {
-    padding-left: 120px;
+    /* padding-left: 120px; */
     height: 100vh !important;
     overflow: auto;
   }
