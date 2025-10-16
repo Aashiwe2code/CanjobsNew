@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcanjobs=self.webpackChunkcanjobs||[]).push([[5389],{25389:(r,e,o)=>{o.r(e),o.d(e,{default:()=>n});var a=o(68931);async function n(r){try{var e;let o={fileUrl:r["@microsoft.graph.downloadUrl"],mimeType:r.file.mimeType},n=await(0,a.HXq)(o);return null===n||void 0===n||null===(e=n.data)||void 0===e?void 0:e.base64}catch(o){return console.error("Error converting Word to PDF:",o),""}}}}]);
+//# sourceMappingURL=5389.4dde26ab.chunk.js.map
