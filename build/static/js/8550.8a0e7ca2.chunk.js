@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcanjobs=self.webpackChunkcanjobs||[]).push([[8550],{58550:(e,s,d)=>{d.r(s),d.d(s,{default:()=>i});d(65043);var t=d(70579);const i=()=>(0,t.jsx)("iframe",{title:"Google Drive Embed",src:"https://drive.google.com/embeddedfolderview?id=1HxWHjHmgFJ30U4zmRJdFe-68PZ7KsUaC#list",width:"640",height:"480"})}}]);
+//# sourceMappingURL=8550.8a0e7ca2.chunk.js.map
